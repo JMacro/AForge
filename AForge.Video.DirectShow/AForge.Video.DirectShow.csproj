@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E353B498-7C94-4919-AE7E-FEA42E6E8061}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>AForge.Video.DirectShow</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AForge.Video.DirectShow.Internals\AMMediaType.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\AnalogVideoStandard.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\BitmapInfoHeader.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\CAUUID.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\Clsid.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\DsEvCode.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\FilterInfo.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\FilterState.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\FindDirection.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\FormatType.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IAMCameraControl.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IAMCrossbar.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IAMStreamConfig.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IAMVideoControl.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IBaseFilter.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\ICaptureGraphBuilder2.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\ICreateDevEnum.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IEnumFilters.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IEnumPins.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IFileSourceFilter.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IFilterGraph.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IFilterGraph2.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IGraphBuilder.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IMediaControl.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IMediaEventEx.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IMediaFilter.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IPersist.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IPin.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IPropertyBag.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IReferenceClock.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\ISampleGrabber.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\ISampleGrabberCB.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\ISpecifyPropertyPages.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\IVideoWindow.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\MediaSubType.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\MediaType.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\PinCategory.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\PinDirection.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\PinInfo.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\RECT.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\Tools.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\VideoControlFlags.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\VideoInfoHeader.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\VideoInfoHeader2.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\VideoStreamConfigCaps.cs" />
+    <Compile Include="AForge.Video.DirectShow.Internals\Win32.cs" />
+    <Compile Include="AForge.Video.DirectShow.Properties\Resources.cs" />
+    <Compile Include="AForge.Video.DirectShow\CameraControlFlags.cs" />
+    <Compile Include="AForge.Video.DirectShow\CameraControlProperty.cs" />
+    <Compile Include="AForge.Video.DirectShow\FileVideoSource.cs" />
+    <Compile Include="AForge.Video.DirectShow\FilterCategory.cs" />
+    <Compile Include="AForge.Video.DirectShow\FilterInfo.cs" />
+    <Compile Include="AForge.Video.DirectShow\FilterInfoCollection.cs" />
+    <Compile Include="AForge.Video.DirectShow\PhysicalConnectorType.cs" />
+    <Compile Include="AForge.Video.DirectShow\VideoCapabilities.cs" />
+    <Compile Include="AForge.Video.DirectShow\VideoCaptureDevice.cs" />
+    <Compile Include="AForge.Video.DirectShow\VideoCaptureDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForge.Video.DirectShow\VideoInput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AForge.Video.DirectShow.Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AForge.Video\AForge.Video.csproj">
+      <Project>{dd9fe1d5-8200-400e-b59d-739e26210ae7}</Project>
+      <Name>AForge.Video</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

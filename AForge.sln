@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge", "AForge.csproj", "{44F1B73F-CB41-40CD-8124-D17C89FBE184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge.Controls", "AForge.Controls\AForge.Controls.csproj", "{B657B56B-E65B-41DB-8AEF-2563EDCF1125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge.Imaging", "AForge.Imaging\AForge.Imaging.csproj", "{E5F66D17-402E-46D1-8A3A-44C79177AD73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge.Imaging.Formats", "AForge.Imaging.Formats\AForge.Imaging.Formats.csproj", "{C223D837-66E3-4F28-A15E-2A55005096B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge.Math", "AForge.Math\AForge.Math.csproj", "{2D1C4E99-54AD-4EA8-B7BD-2FFBDD8F0CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge.Video", "AForge.Video\AForge.Video.csproj", "{DD9FE1D5-8200-400E-B59D-739E26210AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AForge.Video.DirectShow", "AForge.Video.DirectShow\AForge.Video.DirectShow.csproj", "{E353B498-7C94-4919-AE7E-FEA42E6E8061}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44F1B73F-CB41-40CD-8124-D17C89FBE184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F1B73F-CB41-40CD-8124-D17C89FBE184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F1B73F-CB41-40CD-8124-D17C89FBE184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F1B73F-CB41-40CD-8124-D17C89FBE184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B657B56B-E65B-41DB-8AEF-2563EDCF1125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B657B56B-E65B-41DB-8AEF-2563EDCF1125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B657B56B-E65B-41DB-8AEF-2563EDCF1125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B657B56B-E65B-41DB-8AEF-2563EDCF1125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F66D17-402E-46D1-8A3A-44C79177AD73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F66D17-402E-46D1-8A3A-44C79177AD73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F66D17-402E-46D1-8A3A-44C79177AD73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F66D17-402E-46D1-8A3A-44C79177AD73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C223D837-66E3-4F28-A15E-2A55005096B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C223D837-66E3-4F28-A15E-2A55005096B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C223D837-66E3-4F28-A15E-2A55005096B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C223D837-66E3-4F28-A15E-2A55005096B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1C4E99-54AD-4EA8-B7BD-2FFBDD8F0CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1C4E99-54AD-4EA8-B7BD-2FFBDD8F0CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1C4E99-54AD-4EA8-B7BD-2FFBDD8F0CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1C4E99-54AD-4EA8-B7BD-2FFBDD8F0CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD9FE1D5-8200-400E-B59D-739E26210AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9FE1D5-8200-400E-B59D-739E26210AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9FE1D5-8200-400E-B59D-739E26210AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9FE1D5-8200-400E-B59D-739E26210AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E353B498-7C94-4919-AE7E-FEA42E6E8061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E353B498-7C94-4919-AE7E-FEA42E6E8061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E353B498-7C94-4919-AE7E-FEA42E6E8061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E353B498-7C94-4919-AE7E-FEA42E6E8061}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {334B72B1-D41A-446F-9EF1-BDD4F2539380}
+	EndGlobalSection
+EndGlobal

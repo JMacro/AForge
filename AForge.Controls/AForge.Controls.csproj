@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B657B56B-E65B-41DB-8AEF-2563EDCF1125}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>AForge.Controls</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AForge.Controls\Chart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\ColorSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\Histogram.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\HistogramEventArgs.cs" />
+    <Compile Include="AForge.Controls\HistogramEventHandler.cs" />
+    <Compile Include="AForge.Controls\HuePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\Joystick.cs" />
+    <Compile Include="AForge.Controls\JoystickAPI.cs" />
+    <Compile Include="AForge.Controls\ManipulatorControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\PictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\SliderControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AForge.Controls\VideoSourcePlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AForge.Controls\HistogramEventArgs.resx" />
+    <EmbeddedResource Include="AForge.Controls\HuePicker.resx" />
+    <EmbeddedResource Include="AForge.Controls\Resources.arrow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AForge.Imaging\AForge.Imaging.csproj">
+      <Project>{e5f66d17-402e-46d1-8a3a-44c79177ad73}</Project>
+      <Name>AForge.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AForge.Video\AForge.Video.csproj">
+      <Project>{dd9fe1d5-8200-400e-b59d-739e26210ae7}</Project>
+      <Name>AForge.Video</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AForge\AForge.csproj">
+      <Project>{44f1b73f-cb41-40cd-8124-d17c89fbe184}</Project>
+      <Name>AForge</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
